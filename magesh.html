@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subash Iron Work | Fabrication & Welding Works</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                            950: '#3b0764',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#0f071c] text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white pb-24 md:pb-0">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#0f071c]/80 border-b border-brand-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 via-purple-500 to-indigo-400 flex items-center justify-center shadow-lg shadow-brand-600/40">
+                    <i class="fa-solid fa-hammer text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-tight bg-gradient-to-r from-white via-brand-200 to-brand-400 bg-clip-text text-transparent" data-i18n="brand-name">Subash Iron Work</span>
+                    <span class="block text-xs text-brand-400 font-semibold tracking-wider uppercase" data-i18n="brand-sub">சுபாஷ் அயன் ஒர்க்</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#categories" class="hover:text-brand-300 transition-colors" data-i18n="nav-services">Services</a>
+                <a href="#inquiry" class="hover:text-brand-300 transition-colors" data-i18n="nav-inquiry">Quick Inquiry</a>
+                <a href="#location" class="hover:text-brand-300 transition-colors" data-i18n="nav-location">Location</a>
+                <a href="tel:07708184878" class="flex items-center space-x-2 text-brand-200 hover:text-white bg-brand-950/80 px-4 py-2.5 rounded-xl border border-brand-800/60 shadow-inner">
+                    <i class="fa-solid fa-phone text-brand-400"></i>
+                    <span class="font-semibold">077081 84878</span>
+                </a>
+                
+                <!-- Language Toggle -->
+                <div class="flex bg-brand-950/60 rounded-xl p-1 border border-brand-800/50 ml-2">
+                    <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1 text-xs font-bold rounded-lg bg-brand-600 text-white transition-all shadow-sm">EN</button>
+                    <button onclick="setLanguage('ta')" id="btn-ta" class="px-3 py-1 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition-all">தமிழ்</button>
+                </div>
+            </nav>
+
+            <!-- Mobile Lang Toggle -->
+            <div class="flex md:hidden bg-brand-950/60 rounded-xl p-1 border border-brand-800/50">
+                <button onclick="setLanguage('en')" id="m-btn-en" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-600 text-white">EN</button>
+                <button onclick="setLanguage('ta')" id="m-btn-ta" class="px-2.5 py-1 text-xs font-bold rounded-lg text-slate-400">தமிழ்</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/40 via-[#0f071c] to-[#0f071c] -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-brand-950/80 border border-brand-800/60 text-brand-300 text-xs font-bold uppercase tracking-wider mb-8 shadow-xl backdrop-blur-md">
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <span data-i18n="hero-badge">5.0 Rated Service (7 Reviews) • Open 24 Hours</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-tight">
+                <span data-i18n="hero-title-1">Precision Metal</span> <span class="bg-gradient-to-r from-brand-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent" data-i18n="hero-title-2">Fabrication & Welding</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300/80 mb-10 font-medium" data-i18n="hero-desc">
+                Your trusted partner for custom iron works, structural welding, gates, grills, sheds, and robust fabrication solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#categories" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-purple-600 to-indigo-600 text-white font-bold shadow-xl shadow-brand-600/30 hover:shadow-brand-500/50 hover:scale-[1.02] transition-all text-center" data-i18n="btn-explore">
+                    Explore 15+ Categories
+                </a>
+                <a href="https://wa.me/917708184878" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-brand-950/60 border border-brand-800/60 text-brand-200 font-bold hover:bg-brand-900/60 transition-all flex items-center justify-center space-x-2 backdrop-blur-md">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                    <span data-i18n="btn-whatsapp">WhatsApp: 077081 84878</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15 Main Categories Section -->
+    <section id="categories" class="py-20 bg-brand-950/20 border-t border-brand-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight" data-i18n="sec-cat-title">Our Main Fabrication Categories</h2>
+                <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto" data-i18n="sec-cat-sub">Select any service category and click 'Enquire' to message us instantly on WhatsApp.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Iron Gate Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80" alt="Iron Gate Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-torii-gate"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-1">Iron Gate Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-1-desc">Heavy-duty sliding, swing, and automated designer iron gates built for durability and security.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Iron Gate Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. Window Grill Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Window Grill Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-border-all"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-2">Window Grill Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-2-desc">Designer security window grills and protective iron barriers tailored to home aesthetics.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Window Grill Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Staircase & Railing Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Staircase & Railing Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-stairs"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-3">Staircase & Railing Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-3-desc">Modern indoor/outdoor metal stair structures, spiral steps, and sturdy handrail systems.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Staircase & Railing Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. Roofing Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Roofing Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-house-chimney"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-4">Roofing Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-4-desc">Metal sheet roofing, terrace covers, and weather-proof roof construction for homes & industry.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Roofing Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. Shed Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Shed Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-5">Shed Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-5-desc">Industrial sheds, warehouse steel frameworks, factory setups, and secure car parking sheds.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Shed Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. MS Fabrication Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="MS Fabrication Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-6">MS Fabrication Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-6-desc">Mild Steel structural supports, frames, industrial beams, and custom framework engineering.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('MS Fabrication Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. Stainless Steel Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f19f2?auto=format&fit=crop&w=600&q=80" alt="Stainless Steel Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-7">Stainless Steel Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-7-desc">SS handrails, premium pipes, corrosion-resistant fixtures, and architectural SS structures.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Stainless Steel Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. Iron Grill Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=600&q=80" alt="Iron Grill Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-8">Iron Grill Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-8-desc">Robust security iron grilles for compound walls, windows, balconies, and entry doors.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Iron Grill Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 9. Door Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=600&q=80" alt="Door Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-door-closed"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-9">Door Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-9-desc">Designer metal doors, safety iron mesh security doors, and robust shop/factory entrances.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Door Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 10. Custom Iron Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Custom Iron Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-10">Custom Iron Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-10-desc">Bespoke metal and iron structures manufactured precisely to unique client specifications.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Custom Iron Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 11. Welding Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Welding Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-11">Welding Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-11-desc">Expert arc, MIG, and TIG welding services for strong, seamless, and high-strength metal joints.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Welding Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 12. Industrial Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1565793979203-241517f698e6?auto=format&fit=crop&w=600&q=80" alt="Industrial Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-12">Industrial Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-12-desc">Heavy plant platforms, ladders, structural steel frameworks, and industrial machinery supports.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Industrial Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 13. Residential Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Residential Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-13">Residential Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-13-desc">Complete home metal solutions including compound gates, balcony railings, and window grills.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Residential Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 14. Commercial Fabrication -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Commercial Fabrication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-shop"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-14">Commercial Fabrication</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-14-desc">Shop shutters, commercial security gates, architectural sign displays, and store frames.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Commercial Fabrication')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 15. Repair & Modification Works -->
+                <div class="bg-brand-950/40 border border-brand-800/40 rounded-3xl overflow-hidden hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-600/20 transition-all duration-300 group flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Repair & Modification Works" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0f071c] via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-brand-950/90 backdrop-blur-md flex items-center justify-center text-brand-300 border border-brand-700/60 shadow-lg">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors" data-i18n="cat-15">Repair & Modification Works</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4" data-i18n="cat-15-desc">On-site gate alignment, structural welding repairs, retrofitting, and custom modifications.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="inquireProduct('Repair & Modification Works')" class="w-full py-3.5 rounded-2xl bg-brand-900/60 hover:bg-brand-600 border border-brand-700/50 text-white font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg group-hover:bg-brand-600">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg group-hover:text-white transition-colors"></i>
+                            <span data-i18n="btn-inquire">Enquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Inquiry Form Section -->
+    <section id="inquiry" class="py-20 bg-gradient-to-b from-[#0f071c] to-brand-950/40">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-950/70 border border-brand-800/60 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden backdrop-blur-xl">
+                <div class="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl sm:text-3xl font-black text-white mb-2" data-i18n="form-title">Direct WhatsApp Inquiry Form</h2>
+                    <p class="text-slate-400 text-sm" data-i18n="form-sub">Select your required service category, fill out project details, and send directly to 077081 84878.</p>
+                </div>
+                <form id="inquiryForm" onsubmit="sendWhatsAppInquiry(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2" data-i18n="lbl-name">Your Name</label>
+                            <input type="text" id="clientName" required class="w-full bg-[#0f071c] border border-brand-900 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 transition-colors shadow-inner" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2" data-i18n="lbl-phone">Phone Number</label>
+                            <input type="tel" id="clientPhone" required class="w-full bg-[#0f071c] border border-brand-900 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 transition-colors shadow-inner" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2" data-i18n="lbl-category">Select Category</label>
+                        <select id="clientCategory" class="w-full bg-[#0f071c] border border-brand-900 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 transition-colors shadow-inner">
+                            <option value="Iron Gate Fabrication">Iron Gate Fabrication</option>
+                            <option value="Window Grill Fabrication">Window Grill Fabrication</option>
+                            <option value="Staircase & Railing Works">Staircase & Railing Works</option>
+                            <option value="Roofing Works">Roofing Works</option>
+                            <option value="Shed Fabrication">Shed Fabrication</option>
+                            <option value="MS Fabrication Works">MS Fabrication Works</option>
+                            <option value="Stainless Steel Works">Stainless Steel Works</option>
+                            <option value="Iron Grill Works">Iron Grill Works</option>
+                            <option value="Door Fabrication">Door Fabrication</option>
+                            <option value="Custom Iron Works">Custom Iron Works</option>
+                            <option value="Welding Works">Welding Works</option>
+                            <option value="Industrial Fabrication">Industrial Fabrication</option>
+                            <option value="Residential Fabrication">Residential Fabrication</option>
+                            <option value="Commercial Fabrication">Commercial Fabrication</option>
+                            <option value="Repair & Modification Works">Repair & Modification Works</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2" data-i18n="lbl-msg">Project Requirements / Measurements</label>
+                        <textarea id="clientMessage" rows="4" required class="w-full bg-[#0f071c] border border-brand-900 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 transition-colors shadow-inner" placeholder="Specify dimensions, design preferences, or requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-purple-600 to-indigo-600 text-white font-bold shadow-xl shadow-brand-600/30 hover:shadow-brand-500/50 hover:scale-[1.01] transition-all flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl text-green-400"></i>
+                        <span data-i18n="btn-submit-form">Send Inquiry via WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Info -->
+    <section id="location" class="py-20 bg-[#0f071c] border-t border-brand-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-black text-white mb-6" data-i18n="sec-location">Visit Our Workshop</h2>
+                    <p class="text-slate-300/80 mb-8 leading-relaxed font-medium" data-i18n="loc-desc">
+                        Open 24 hours to cater to your urgent metal fabrication and emergency welding requirements. Call us directly at <strong class="text-white font-bold">077081 84878</strong>.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-950 border border-brand-800/60 flex items-center justify-center text-brand-400 shrink-0 mt-1 shadow-md"><i class="fa-solid fa-location-dot text-lg"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1" data-i18n="loc-address">Address</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed">Mapillaioorani, East Coast Rd, T.Saveriarpuram, Davis Puram, Mappilaiurani, Tamil Nadu 628002</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-950 border border-brand-800/60 flex items-center justify-center text-brand-400 shrink-0 mt-1 shadow-md"><i class="fa-solid fa-phone text-lg"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Phone / WhatsApp</h4>
+                                <a href="tel:07708184878" class="text-brand-300 hover:text-white text-sm font-bold tracking-wide">077081 84878</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map Card -->
+                <div class="bg-brand-950/50 border border-brand-800/60 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-2xl backdrop-blur-md">
+                    <div class="w-20 h-20 rounded-2xl bg-brand-900/60 border border-brand-700/60 flex items-center justify-center text-brand-300 mb-6 shadow-inner"><i class="fa-solid fa-map-location-dot text-3xl"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Google Maps Plus Code</h3>
+                    <p class="text-brand-300 font-mono bg-[#0f071c] px-5 py-2.5 rounded-2xl border border-brand-800/60 mb-8 tracking-wider shadow-inner text-sm">R4PR+XP Mappilaiurani, Tamil Nadu</p>
+                    <a href="https://maps.app.goo.gl/DRnq8tsqwXsm7AA98" target="_blank" class="w-full py-4 rounded-2xl bg-gradient-to-r from-brand-600 to-purple-600 hover:from-brand-500 hover:to-purple-500 text-white font-bold shadow-lg shadow-brand-600/30 flex items-center justify-center space-x-2 transition-all">
+                        <i class="fa-solid fa-directions"></i>
+                        <span data-i18n="btn-map">Open Location in Google Maps</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-[#0b0514] border-t border-brand-900/40 text-center text-xs sm:text-sm text-slate-400">
+        <p>&copy; 2026 Subash Iron Work (Ph: 077081 84878). All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#0f071c]/95 backdrop-blur-xl border-t border-brand-800/50 px-4 py-3 flex justify-around items-center text-center shadow-2xl">
+        <a href="#categories" class="flex flex-col items-center text-slate-300 hover:text-brand-300 text-xs font-semibold">
+            <i class="fa-solid fa-list text-lg mb-1 text-brand-400"></i>
+            <span data-i18n="mob-cat">Categories</span>
+        </a>
+        <a href="#inquiry" class="flex flex-col items-center text-slate-300 hover:text-brand-300 text-xs font-semibold">
+            <i class="fa-solid fa-file-pen text-lg mb-1 text-brand-400"></i>
+            <span data-i18n="mob-inquiry">Inquiry</span>
+        </a>
+        <a href="https://wa.me/917708184878" target="_blank" class="flex flex-col items-center text-slate-300 hover:text-green-400 text-xs font-semibold">
+            <i class="fa-brands fa-whatsapp text-xl mb-1 text-green-400"></i>
+            <span>WhatsApp</span>
+        </a>
+        <a href="tel:07708184878" class="flex flex-col items-center text-slate-300 hover:text-brand-300 text-xs font-semibold">
+            <i class="fa-solid fa-phone text-lg mb-1 text-brand-400"></i>
+            <span>Call Now</span>
+        </a>
+    </div>
+
+    <!-- JavaScript for Language Toggle & WhatsApp Automation -->
+    <script>
+        const WHATSAPP_NUMBER = '917708184878';
+
+        const translations = {
+            'brand-name': { en: 'Subash Iron Work', ta: 'சுபாஷ் அயன் ஒர்க்' },
+            'brand-sub': { en: 'Fabrication & Welding Works', ta: 'ஃபேப்ரிகேஷன் & வெல்டிங் ஒர்க்ஸ்' },
+            'nav-services': { en: 'Services', ta: 'சேவைகள்' },
+            'nav-inquiry': { en: 'Quick Inquiry', ta: 'விசாரணை' },
+            'nav-location': { en: 'Location', ta: 'இருப்பிடம்' },
+            'hero-badge': { en: '5.0 Rated Service (7 Reviews) • Open 24 Hours', ta: '5.0 ரேட்டிங் (7 விமர்சனங்கள்) • 24 மணிநேரமும் திறந்திருக்கும்' },
+            'hero-title-1': { en: 'Precision Metal', ta: 'துல்லியமான உலோக' },
+            'hero-title-2': { en: 'Fabrication & Welding', ta: 'ஃபேப்ரிகேஷன் & வெல்டிங்' },
+            'hero-desc': { 
+                en: 'Your trusted partner for custom iron works, structural welding, gates, grills, sheds, and robust fabrication solutions.', 
+                ta: 'தமிழ்நாட்டில் இரும்பு வேலைகள், கட்டமைப்பு வெல்டிங், கேட்ஸ், கிரில்ஸ், ஷெட்டுகள் மற்றும் ஃபேப்ரிகேஷன் தீர்வுகளுக்கான நம்பகமான மையம்.' 
+            },
+            'btn-explore': { en: 'Explore 15+ Categories', ta: 'அனைத்து 15 வகைகளையும் காண்க' },
+            'btn-whatsapp': { en: 'WhatsApp: 077081 84878', ta: 'WhatsApp: 077081 84878' },
+            'sec-cat-title': { en: 'Our Main Fabrication Categories', ta: 'எங்கள் முக்கிய ஃபேப்ரிகேஷன் பிரிவுகள்' },
+            'sec-cat-sub': { en: 'Select any service category and click \'Enquire\' to message us instantly on WhatsApp.', ta: 'எங்கள் சேவைகளை பார்வையிட்டு, உடனே WhatsApp-ல் விசாரிக்கவும்.' },
+            
+            // Categories
+            'cat-1': { en: 'Iron Gate Fabrication', ta: 'இரும்பு கேட் ஃபேப்ரிகேஷன்' },
+            'cat-1-desc': { en: 'Heavy-duty sliding, swing, and automated designer iron gates built for durability and security.', ta: 'பாதுகாப்பு மற்றும் அழகுக்கான ஸ்லைடிங் மற்றும் ஸ்விங் இரும்பு கேட்டுகள்.' },
+            
+            'cat-2': { en: 'Window Grill Fabrication', ta: 'ஜன்னல் கிரில் ஃபேப்ரிகேஷன்' },
+            'cat-2-desc': { en: 'Designer security window grills and protective iron barriers tailored to home aesthetics.', ta: 'ஜன்னல் பாதுகாப்பு கிரில்கள் மற்றும் பால்கனி தடுப்புகள்.' },
+            
+            'cat-3': { en: 'Staircase & Railing Works', ta: 'மாடிப் படிகள் & கைப்பிடி வேலைகள்' },
+            'cat-3-desc': { en: 'Modern indoor/outdoor metal stair structures, spiral steps, and sturdy handrail systems.', ta: 'நவீன மாடிப் படிகள் மற்றும் கைப்பிடி (Railing) அமைப்புகள்.' },
+            
+            'cat-4': { en: 'Roofing Works', ta: 'கூரை (Roofing) வேலைகள்' },
+            'cat-4-desc': { en: 'Metal sheet roofing, terrace covers, and weather-proof roof construction for homes & industry.', ta: 'மெட்டல் ஷீட் கூரை அமைப்பு மற்றும் டெரஸ் ஷேடுகள்.' },
+            
+            'cat-5': { en: 'Shed Fabrication', ta: 'ஷெட் (Shed) ஃபேப்ரிகேஷன்' },
+            'cat-5-desc': { en: 'Industrial sheds, warehouse steel frameworks, factory setups, and secure car parking sheds.', ta: 'தொழில்துறை ஷெட்டுகள், கிடங்கு கட்டமைப்புகள் மற்றும் பார்க்கிங் ஷெட்டுகள்.' },
+            
+            'cat-6': { en: 'MS Fabrication Works', ta: 'MS ஃபேப்ரிகேஷன் வேலைகள்' },
+            'cat-6-desc': { en: 'Mild Steel structural supports, frames, industrial beams, and custom framework engineering.', ta: 'மைல்டு ஸ்டீல் (MS) கட்டமைப்பு ஆதரவுகள் மற்றும் சட்டங்கள்.' },
+            
+            'cat-7': { en: 'Stainless Steel Works', ta: 'துருப்பிடிக்காத எஃகு (SS) வேலைகள்' },
+            'cat-7-desc': { en: 'SS handrails, premium pipes, corrosion-resistant fixtures, and architectural SS structures.', ta: 'SS கைப்பிடிகள், குழாய்கள் மற்றும் துருப்பிடிக்காத சாதனங்கள்.' },
+            
+            'cat-8': { en: 'Iron Grill Works', ta: 'இரும்பு கிரில் வேலைகள்' },
+            'cat-8-desc': { en: 'Robust security iron grilles for compound walls, windows, balconies, and entry doors.', ta: 'கதவுகள், காம்பவுண்ட் சுவர்கள் மற்றும் ஜன்னல்களுக்கான உறுதியான கிரில்கள்.' },
+            
+            'cat-9': { en: 'Door Fabrication', ta: 'கதவு (Door) ஃபேப்ரிகேஷன்' },
+            'cat-9-desc': { en: 'Designer metal doors, safety iron mesh security doors, and robust shop/factory entrances.', ta: 'டிசைனர் மெட்டல் கதவுகள் மற்றும் பாதுகாப்பான நுழைவு வாயில்கள்.' },
+            
+            'cat-10': { en: 'Custom Iron Works', ta: 'தனிப்பயன் இரும்பு வேலைகள்' },
+            'cat-10-desc': { en: 'Bespoke metal and iron structures manufactured precisely to unique client specifications.', ta: 'உங்கள் விருப்பத்திற்கேற்ப வடிவமைக்கப்படும் தனிப்பயன் இரும்பு வேலைகள்.' },
+            
+            'cat-11': { en: 'Welding Works', ta: 'வெல்டிங் வேலைகள்' },
+            'cat-11-desc': { en: 'Expert arc, MIG, and TIG welding services for strong, seamless, and high-strength metal joints.', ta: 'அனைத்து வகையான உலோகம் இணைக்கும் தேவைகளுக்கான வெல்டிங் சேவைகள்.' },
+            
+            'cat-12': { en: 'Industrial Fabrication', ta: 'தொழில்துறை ஃபேப்ரிகேஷன்' },
+            'cat-12-desc': { en: 'Heavy plant platforms, ladders, structural steel frameworks, and industrial machinery supports.', ta: 'கனரக தொழிற்சாலை ஃபேப்ரிகேஷன் மற்றும் கட்டமைப்பு ஆதரவுகள்.' },
+            
+            'cat-13': { en: 'Residential Fabrication', ta: 'வீட்டு உபயோக ஃபேப்ரிகேஷன்' },
+            'cat-13-desc': { en: 'Complete home metal solutions including compound gates, balcony railings, and window grills.', ta: 'வீடுகளுக்கான கேட், பால்கனி ரெயிலிங் மற்றும் பாதுகாப்பு கிரில்கள்.' },
+            
+            'cat-14': { en: 'Commercial Fabrication', ta: 'வணிக ஃபேப்ரிகேஷன்' },
+            'cat-14-desc': { en: 'Shop shutters, commercial security gates, architectural sign displays, and store frames.', ta: 'கடை ஷட்டர்கள், வணிகப் பாதுகாப்பு வாயில்கள் மற்றும் கட்டமைப்புகள்.' },
+            
+            'cat-15': { en: 'Repair & Modification Works', ta: 'பழுதுபார்ப்பு & மாற்றியமைத்தல்' },
+            'cat-15-desc': { en: 'On-site gate alignment, structural welding repairs, retrofitting, and custom modifications.', ta: 'இணையதளத்தில் கேட் சீரமைப்பு, வெல்டிங் பழுதுபார்த்தல் மற்றும் மாற்றங்கள்.' },
+
+            'btn-inquire': { en: 'Enquire via WhatsApp', ta: 'WhatsApp-ல் விசாரிக்கவும்' },
+            'form-title': { en: 'Direct WhatsApp Inquiry Form', ta: 'நேரடி WhatsApp விசாரணை படிவம்' },
+            'form-sub': { en: 'Select your required service category, fill out project details, and send directly to 077081 84878.', ta: 'தேவையான பிரிவைத் தேர்ந்தெடுத்து, உங்கள் விவரங்களை WhatsApp மூலம் அனுப்பவும்.' },
+            'lbl-name': { en: 'Your Name', ta: 'உங்கள் பெயர்' },
+            'lbl-phone': { en: 'Phone Number', ta: 'தொலைபேசி எண்' },
+            'lbl-category': { en: 'Select Category', ta: 'பிரிவைத் தேர்ந்தெடுக்கவும்' },
+            'lbl-msg': { en: 'Project Requirements / Measurements', ta: 'திட்ட தேவைகள் / அளவீடுகள்' },
+            'btn-submit-form': { en: 'Send Inquiry via WhatsApp', ta: 'WhatsApp மூலம் விசாரணையை அனுப்பவும்' },
+            'sec-location': { en: 'Visit Our Workshop', ta: 'எங்கள் பணிமனையை பார்வையிடவும்' },
+            'loc-desc': { en: 'Open 24 hours to cater to your urgent metal fabrication and emergency welding requirements.', ta: 'உங்கள் அவசர தேவைகளைப் பூர்த்தி செய்ய 24 மணிநேரமும் திறந்திருக்கும்.' },
+            'loc-address': { en: 'Address', ta: 'முகவரி' },
+            'btn-map': { en: 'Open Location in Google Maps', ta: 'Google Maps-ல் இருப்பிடத்தைத் திறக்க' },
+            'mob-cat': { en: 'Categories', ta: 'வகைகள்' },
+            'mob-inquiry': { en: 'Inquiry', ta: 'விசாரணை' }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[key] && translations[key][lang]) {
+                    el.innerText = translations[key][lang];
+                }
+            });
+
+            const btnEn = document.getElementById('btn-en');
+            const btnTa = document.getElementById('btn-ta');
+            const mBtnEn = document.getElementById('m-btn-en');
+            const mBtnTa = document.getElementById('m-btn-ta');
+
+            if(lang === 'en') {
+                if(btnEn) btnEn.className = "px-3 py-1 text-xs font-bold rounded-lg bg-brand-600 text-white transition-all shadow-sm";
+                if(btnTa) btnTa.className = "px-3 py-1 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition-all";
+                if(mBtnEn) mBtnEn.className = "px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-600 text-white";
+                if(mBtnTa) mBtnTa.className = "px-2.5 py-1 text-xs font-bold rounded-lg text-slate-400";
+            } else {
+                if(btnTa) btnTa.className = "px-3 py-1 text-xs font-bold rounded-lg bg-brand-600 text-white transition-all shadow-sm";
+                if(btnEn) btnEn.className = "px-3 py-1 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition-all";
+                if(mBtnTa) mBtnTa.className = "px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-600 text-white";
+                if(mBtnEn) mBtnEn.className = "px-2.5 py-1 text-xs font-bold rounded-lg text-slate-400";
+            }
+        }
+
+        function inquireProduct(categoryName) {
+            const text = `Hello Subash Iron Work (077081 84878), I would like to inquire about your *${categoryName}* service. Please share details and pricing.`;
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        async function saveInquiryToDatabase(inquiry) {
+            const response = await fetch('/api/inquiries', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(inquiry)
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                throw new Error(errorData.error || 'Unable to save inquiry.');
+            }
+
+            return response.json();
+        }
+
+        async function sendWhatsAppInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const category = document.getElementById('clientCategory').value;
+            const message = document.getElementById('clientMessage').value.trim();
+
+            if (!name || !phone || !message) {
+                alert('Please enter your name, phone number, and project requirements.');
+                return;
+            }
+
+            try {
+                await saveInquiryToDatabase({ name, phone, category, message });
+            } catch (error) {
+                console.error('Database save failed:', error);
+                alert('The inquiry could not be saved to the database, but the WhatsApp message will still be opened.');
+            }
+
+            const text = `*New Service Inquiry - Subash Iron Work (077081 84878)*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Category:* ${encodeURIComponent(category)}%0A*Requirements:* ${encodeURIComponent(message)}`;
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
